@@ -15,7 +15,7 @@ const SearchForm = () => {
     e.preventDefault();
     if((e.target.value.replace(/[^\w\s]/gi, "")).length !== 0){
       setSearchTerm(e.target.value);
-      setErrorMsg("");
+      setErrorMsg("Error Found");
     } else {
       setErrorMsg("Invalid search term ...");
     }
